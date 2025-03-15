@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>Hello <%= name %></h3>
+    <h3>Votre age est : <%= age %></h3>
+    <h3>Nombres : <%= numbers %></h3>
+
+    <% numbers.forEach(number => { %>
+        <p><%= number %></p>
+    <% }) %>
+
+    <% if(age > 30){ %>
+
+    <div><h3>the age is upper than 30 your age is <%= age %></h3></div>
+
+    <% } else{ %>
+
+    <div><h3>the age is lower than 30 your age is <%= age %> </h3></div>
+    <% } %>
+  </body>
+</html>
