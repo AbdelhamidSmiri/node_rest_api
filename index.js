@@ -53,7 +53,7 @@ app.get("/json_res", (req, res) => {
   });
 });
 
-app.get("/numbers", (req, res) => {
+app.get("/numberss", (req, res) => {
   let number = [];
   for (let index = 1; index <= 100; index++) {
     number.push(index);
@@ -177,6 +177,7 @@ app.put("/societes/:id",async (req,res)=>{
 
 
 // ====== end Societe endpoint =======
+
 
 app.listen(3000, () => {
   console.log("I'm listening port 3000 ");
